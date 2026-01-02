@@ -2,14 +2,34 @@
 
 Minimal wallpapers featuring the [Catppuccin](https://catppuccin.com/) color palette for MacBook (2560x1600).
 
-## Variants
+## Previews
 
-| Flavor | Background | Preview |
-|--------|------------|---------|
-| Latte | `#eff1f5` | Light theme |
-| Frappé | `#303446` | Muted dark |
-| Macchiato | `#24273a` | Medium dark |
-| Mocha | `#1e1e2e` | Darkest |
+<table>
+  <tr>
+    <td align="center">
+      <img src="./catppuccin-latte-wallpaper.png" width="100%" />
+      <br />
+      <b>Latte</b> <code>#eff1f5</code>
+    </td>
+    <td align="center">
+      <img src="./catppuccin-frappe-wallpaper.png" width="100%" />
+      <br />
+      <b>Frappé</b> <code>#303446</code>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./catppuccin-macchiato-wallpaper.png" width="100%" />
+      <br />
+      <b>Macchiato</b> <code>#24273a</code>
+    </td>
+    <td align="center">
+      <img src="./catppuccin-mocha-wallpaper.png" width="100%" />
+      <br />
+      <b>Mocha</b> <code>#1e1e2e</code>
+    </td>
+  </tr>
+</table>
 
 ## How to Generate
 
