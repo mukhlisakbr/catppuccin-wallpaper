@@ -35,10 +35,10 @@ Minimal wallpapers featuring the [Catppuccin](https://catppuccin.com/) color pal
 
 ### Plain (No Logo)
 
-| Macchiato |
-|:---------:|
-| <img src="./phone/plain/catppuccin-macchiato.png" width="200" /> |
-| `#24273a` |
+| Latte | Frappe | Macchiato | Mocha |
+|:-----:|:------:|:---------:|:-----:|
+| <img src="./phone/plain/catppuccin-latte.png" width="150" /> | <img src="./phone/plain/catppuccin-frappe.png" width="150" /> | <img src="./phone/plain/catppuccin-macchiato.png" width="150" /> | <img src="./phone/plain/catppuccin-mocha.png" width="150" /> |
+| `#eff1f5` | `#303446` | `#24273a` | `#1e1e2e` |
 
 ## How to Generate
 
@@ -82,8 +82,17 @@ magick -size 2560x1600 xc:"#1e1e2e" \
 ### Phone Wallpapers (Plain)
 
 ```bash
+# Latte (Light)
+magick -size 1170x2532 xc:"#eff1f5" phone/plain/catppuccin-latte.png
+
+# Frappe
+magick -size 1170x2532 xc:"#303446" phone/plain/catppuccin-frappe.png
+
 # Macchiato
 magick -size 1170x2532 xc:"#24273a" phone/plain/catppuccin-macchiato.png
+
+# Mocha (Darkest)
+magick -size 1170x2532 xc:"#1e1e2e" phone/plain/catppuccin-mocha.png
 ```
 
 ## Credits
