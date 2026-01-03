@@ -1,79 +1,89 @@
 # Catppuccin Wallpapers
 
-Minimal wallpapers featuring the [Catppuccin](https://catppuccin.com/) color palette for MacBook (2560x1600).
+Minimal wallpapers featuring the [Catppuccin](https://catppuccin.com/) color palette.
 
-## Previews
+## Desktop (2560x1600)
 
 <table>
   <tr>
     <td align="center">
-      <img src="./catppuccin-latte-wallpaper.png" width="100%" />
+      <img src="./desktop/catppuccin-latte.png" width="100%" />
       <br />
       <b>Latte</b> <code>#eff1f5</code>
     </td>
     <td align="center">
-      <img src="./catppuccin-frappe-wallpaper.png" width="100%" />
+      <img src="./desktop/catppuccin-frappe.png" width="100%" />
       <br />
-      <b>Frappé</b> <code>#303446</code>
+      <b>Frappe</b> <code>#303446</code>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./catppuccin-macchiato-wallpaper.png" width="100%" />
+      <img src="./desktop/catppuccin-macchiato.png" width="100%" />
       <br />
       <b>Macchiato</b> <code>#24273a</code>
     </td>
     <td align="center">
-      <img src="./catppuccin-mocha-wallpaper.png" width="100%" />
+      <img src="./desktop/catppuccin-mocha.png" width="100%" />
       <br />
       <b>Mocha</b> <code>#1e1e2e</code>
     </td>
   </tr>
 </table>
 
+## Phone (1170x2532)
+
+### Plain (No Logo)
+
+| Macchiato |
+|:---------:|
+| <img src="./phone/plain/catppuccin-macchiato.png" width="200" /> |
+| `#24273a` |
+
 ## How to Generate
 
-These wallpapers were generated using **ImageMagick**. You can recreate them or customize the size/colors using the following commands:
+These wallpapers were generated using **ImageMagick**.
 
-### 1. Prerequisites
-Install ImageMagick:
+### Prerequisites
+
 ```bash
 # macOS (Homebrew)
 brew install imagemagick
 ```
 
-### 2. Download Logo
-```bash
-curl -o catppuccin-logo.png "https://upload.wikimedia.org/wikipedia/commons/7/7b/Catppuccin_Logo.png"
-```
-
-### 3. Generate Wallpapers
-Run the following commands to generate the wallpapers (2560x1600):
+### Desktop Wallpapers
 
 ```bash
 # Latte (Light)
 magick -size 2560x1600 xc:"#eff1f5" \
-  \( catppuccin-logo.png -resize 400x400 \) \
+  \( assets/catppuccin-logo.png -resize 400x400 \) \
   -gravity center -composite \
-  catppuccin-latte-wallpaper.png
+  desktop/catppuccin-latte.png
 
-# Frappé
+# Frappe
 magick -size 2560x1600 xc:"#303446" \
-  \( catppuccin-logo.png -resize 400x400 \) \
+  \( assets/catppuccin-logo.png -resize 400x400 \) \
   -gravity center -composite \
-  catppuccin-frappe-wallpaper.png
+  desktop/catppuccin-frappe.png
 
 # Macchiato
 magick -size 2560x1600 xc:"#24273a" \
-  \( catppuccin-logo.png -resize 400x400 \) \
+  \( assets/catppuccin-logo.png -resize 400x400 \) \
   -gravity center -composite \
-  catppuccin-macchiato-wallpaper.png
+  desktop/catppuccin-macchiato.png
 
 # Mocha (Darkest)
 magick -size 2560x1600 xc:"#1e1e2e" \
-  \( catppuccin-logo.png -resize 400x400 \) \
+  \( assets/catppuccin-logo.png -resize 400x400 \) \
   -gravity center -composite \
-  catppuccin-mocha-wallpaper.png
+  desktop/catppuccin-mocha.png
+```
+
+### Phone Wallpapers (Plain)
+
+```bash
+# Macchiato
+magick -size 1170x2532 xc:"#24273a" phone/plain/catppuccin-macchiato.png
 ```
 
 ## Credits
